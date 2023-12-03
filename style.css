@@ -1,0 +1,31 @@
+body{
+margin: 0;
+padding: 0;
+height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+
+
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  margin: 2px;
+}
+.flex-item {
+  flex: 0 0 calc(100% / var(--columns) - 2px); /* Replace 'x' with the desired number of columns */
+  padding-bottom: calc(100% / var(--columns) - 2px); 
+  margin: 1px;
+  background-color:gray;
+}
+
+.number{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+}
+
